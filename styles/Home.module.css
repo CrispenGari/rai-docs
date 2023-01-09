@@ -1,0 +1,13 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.home__main {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  width: 100%;
+  flex: 1;
+}
