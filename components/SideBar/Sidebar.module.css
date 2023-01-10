@@ -2,6 +2,8 @@
   flex: 0.2;
   color: white;
   user-select: none;
+  display: flex;
+  flex-direction: column;
 }
 .side__bar > h1 {
   text-transform: uppercase;
@@ -9,4 +11,25 @@
   font-weight: 500;
   padding: 10px;
   border-bottom: 1px solid lightgray;
+}
+.side__bar > a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 1s;
+}
+
+.side__bar > a.active {
+  color: var(--dark-blue);
+  background-color: var(--main-dark);
+}
+.side__bar > a:hover {
+  background-color: var(--main-dark) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .side__bar {
+    display: none;
+  }
 }

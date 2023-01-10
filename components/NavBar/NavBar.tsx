@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
-import styles from "./Sidebar.module.css";
+import React from "react";
+import styles from "./NavBar.module.css";
 interface Props {}
-export const Sidebar: React.FC<Props> = ({}) => {
+const NavBar: React.FC<Props> = ({}) => {
   const location = useRouter();
   return (
-    <div className={styles.side__bar}>
-      <h1>React Activity Indicators</h1>
+    <div className={styles.nav__bar}>
       <Link
         className={
           location?.pathname === "/getting_started" ? styles.active : ""
@@ -31,3 +30,5 @@ export const Sidebar: React.FC<Props> = ({}) => {
     </div>
   );
 };
+
+export default NavBar;
